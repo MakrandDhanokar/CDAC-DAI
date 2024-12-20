@@ -1,0 +1,46 @@
+Virtualization
+Virtualization allows creating virtual machines (VMs) that work like physical computers. It’s managed by a hypervisor, which allocates hardware resources to VMs.
+
+Types of Virtualization
+1. Type 1 (Bare-Metal Virtualization)
+What it is: Hypervisor runs directly on the hardware, without needing an OS.
+Examples: Linux KVM ,VMware ESXi Server, Microsoft Hyper-V.
+Use: Ideal for servers and enterprise systems.
+
+Diagram:
+   Hardware
+      ↓
+   Hypervisor
+      ↓
+   Virtual Machines (OS1, OS2, etc.)
+
+2. Type 2 (Hosted Virtualization)
+What it is: Hypervisor runs as software on a host OS.
+Examples: Oracle VirtualBox, VMware Workstation, Player.
+Use: Best for personal or testing purposes.
+
+Diagram:
+
+   Hardware
+      ↓
+   Host Operating System
+      ↓
+   Hypervisor (as software)
+      ↓
+   Virtual Machines
+
+Key Difference
+Type 1: Runs directly on hardware for better performance.
+Type 2: Runs on an OS, easier for testing and personal use.
+
+
+
+Three types of network cards
+1. NAT
+The VM able to access internet by using physical machine address
+
+2. Bridged
+The VM IP is open to outside newtwork. The VM servies are accessible to outside world
+
+3. Host-only
+The VM is restricted to physical machine. No internet. Can only communicate with other VM's with the same machine
